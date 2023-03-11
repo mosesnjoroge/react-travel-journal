@@ -4,7 +4,7 @@ import {Cloudinary} from "@cloudinary/url-gen";
 import {fill} from "@cloudinary/url-gen/actions/resize";
 import { Container } from "react-bootstrap";
 
-export default function Entries() {
+export default function Entries(props) {
 
   const cld = new Cloudinary({
     cloud: {
@@ -24,32 +24,8 @@ export default function Entries() {
         <div className = "cardproduct">
           <AdvancedImage cldImg={myImage} />
           <div className="cardproductinfos">
-            <h2>Product name</h2>
-            <p>Product description with <strong>relevant info</strong> only.</p>
-          </div>
-        </div>
-
-        <div className = "cardproduct">
-          <AdvancedImage cldImg={myImage} />
-          <div className="cardproductinfos">
-            <h2>Product name</h2>
-            <p>Product description with <strong>relevant info</strong> only.</p>
-          </div>
-        </div>
-
-        <div className = "cardproduct">
-          <AdvancedImage cldImg={myImage} />
-          <div className="cardproductinfos">
-            <h2>Product name</h2>
-            <p>Product description with <strong>relevant info</strong> only.</p>
-          </div>
-        </div>
-
-        <div className = "cardproduct">
-          <AdvancedImage cldImg={myImage} />
-          <div className="cardproductinfos">
-            <h2>Product name</h2>
-            <p>Product description with <strong>relevant info</strong> only.</p>
+            <h2>{props.posttitle}</h2>
+            <p>{props.entrytext}</p>
           </div>
         </div>
       </Container>

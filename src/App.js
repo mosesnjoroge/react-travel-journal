@@ -8,7 +8,22 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <Entries/>
+      <Entries
+        posttitle = 'cuba'
+        entrytext = 'very cool place'
+      />
+      <Entries
+        posttitle = 'cuba'
+        entrytext = 'very cool place'
+      />
+      <Entries
+        posttitle = 'cuba'
+        entrytext = 'very cool place'
+      />
+      <Entries
+        posttitle = 'cuba'
+        entrytext = 'very cool place'
+      />
     </div>
   );
 }
