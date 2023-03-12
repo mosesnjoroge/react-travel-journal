@@ -1,14 +1,14 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import {AdvancedImage} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
 import {fill} from "@cloudinary/url-gen/actions/resize";
-import { Container } from "react-bootstrap";
 
 export default function Entries(props) {
 
   const cld = new Cloudinary({
     cloud: {
-      cloudname: 'demo'
+      cloudName: 'demo'
     }
   });
 
@@ -22,7 +22,7 @@ export default function Entries(props) {
     <div className="mt-4">
       <Container>
         <div className = "cardproduct">
-          <AdvancedImage cldImg={myImage} />
+          <AdvancedImage cldImg={myImage}/>
           <div className="cardproductinfos">
             <h2>{props.posttitle}</h2>
             <p>{props.entrytext}</p>
