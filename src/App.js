@@ -14,14 +14,17 @@ function App() {
         posttitle = 'cuba'
         entrytext = 'very cool place'
       />
+
       <Entries
         posttitle = 'cuba'
         entrytext = 'very cool place'
       />
+
       <Entries
         posttitle = 'cuba'
         entrytext = 'very cool place'
       />
+
       <Entries
         posttitle = 'cuba'
         entrytext = 'very cool place'
