@@ -7,12 +7,14 @@ import data from './data'
 
 function App() {
   const entryElements = data.map(entry => {
-    return <Entries
-    id = {entry.id}
-    posttitle = {entry.posttitle}
-    entrytext = {entry.entrytext}
-     />
+    return (
+    <Entries
+      id = {entry.id}
+      posttitle = {entry.posttitle}
+      entrytext = {entry.entrytext}
+    />)
   })
+
   return (
     <div className="App">
       <Nav/>
